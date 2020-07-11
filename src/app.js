@@ -51,7 +51,7 @@ app.get('/weather', (req, res) => {
                         if(error){
                                 return res.send({error})
                         } 
-                        res.send({longitude, latitude, 'Temperature': foreCastData})
+                        res.send({longitude, latitude, foreCastData})
                 })
 })
 })
