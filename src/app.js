@@ -47,11 +47,11 @@ app.get('/weather', (req, res) => {
         if (error) {
                 return res.send({error})
         }
-                forecast(longitude,latitude, (error, foreCastData) => {
+                forecast(longitude,latitude, (error, windDirection) => {
                         if(error){
                                 return res.send({error})
                         } 
-                        res.send({longitude, latitude, foreCastData})
+                        res.send({longitude, latitude, windDirection})
                 })
 })
 })
