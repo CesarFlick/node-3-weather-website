@@ -18,7 +18,7 @@ weatherForm.addEventListener('submit', (e) => {
             if(data.error){
                 messageOne.textContent = data.error
             } else {
-                messageTwo.textContent = data.Temperature
+                messageTwo.textContent = data.Temperature + '°C'
             }
         })
     })
